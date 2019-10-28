@@ -20,7 +20,7 @@ export class ProductService {
   getAlbum(id: number): Observable<Album> {
     return this._http.get(this._albumUrl).map((response) => <Album>response.json());
   }
-  getProducts(_productsUrl):Observable<Product[]> {
+  getProducts():Observable<Product[]> {
     return this._http.get(this._productsUrl).map((response) => <Product[]> response.json());
   }
 
